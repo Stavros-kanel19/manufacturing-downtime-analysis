@@ -120,4 +120,18 @@ Python_files/manufacturing_boxplots.py
 
 ![Details Dashboard](Dashboard/Details_Dashboard.png)
 
+## Project Focus
+
+This project was built to demonstrate:
+
+- Excel dashboard design
+- Power Query data preparation
+- Data modeling logic
+- Pivot-based analysis
+- Basic DAX usage
+- Manufacturing performance analysis
+- Downtime factor analysis
+- Python-based exploratory visualization
+- Statistical thinking for production and quality improvement
+- Interactive Excel navigation using linked dashboard icons
 
