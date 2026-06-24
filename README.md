@@ -47,6 +47,8 @@ The Excel workbook contains three main dashboard pages:
    Provides additional statistical views using time ratio and product/operator efficiency comparisons.
 
 Supporting sheets with cleaned data, pivot tables, and helper calculations  are hidden in the workbook to keep the final file user-friendly.
+The dashboard also includes a navigation sidebar with clickable icons. Each icon is linked to a specific dashboard page, 
+allowing the user to move between the Operator Dashboard, Products & Downtimes Dashboard, and Details Dashboard directly from the workbook interface.
 
 ---
 
