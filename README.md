@@ -100,5 +100,22 @@ The Python script can be found in:
 
 ```text
 Python_files/manufacturing_boxplots.py
+```
+
+---
+
+## Screenshots
+
+### Operator Dashboard
+
+![Operator Dashboard](Dashboard/Operator_Dashboard.png)
+
+### Products & Downtimes Dashboard
+
+![Products and Downtimes Dashboard](Dashboard/Product%26Downtimes_Dashboard.png)
+
+### Details Dashboard
+
+![Details Dashboard](Dashboard/Details_Dashboard.png)
 
 
