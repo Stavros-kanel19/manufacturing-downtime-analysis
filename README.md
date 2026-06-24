@@ -82,6 +82,11 @@ The project included:
 6. Interpreting operator, product, and downtime factor patterns.
 
 ---
+## Credits
+
+Dataset source: Maven Analytics guided project dataset.
+
+Some dashboard visual assets, such as icons and background images, were AI-generated for presentation purposes.
 
 ## Python Analysis
 
@@ -96,8 +101,4 @@ The Python script can be found in:
 ```text
 Python_files/manufactur_boxplots.py
 
-## Credits
 
-Dataset source: Maven Analytics guided project dataset.
-
-Some dashboard visual assets, such as icons and background images, were AI-generated for presentation purposes.
