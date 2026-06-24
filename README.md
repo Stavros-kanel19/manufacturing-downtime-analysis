@@ -127,11 +127,11 @@ This project was built to demonstrate:
 - Excel dashboard design
 - Power Query data preparation
 - Data modeling logic
-- Pivot-based analysis
+- Analysis with Power Pivots
 - Basic DAX usage
 - Manufacturing performance analysis
 - Downtime factor analysis
-- Python-based exploratory visualization
+- Exploratory visualisation using Python
 - Statistical thinking for production and quality improvement
 - Interactive Excel navigation using linked dashboard icons
 
