@@ -99,6 +99,6 @@ Python was used to generate the boxplot analysis included in the Details dashboa
 The Python script can be found in:
 
 ```text
-Python_files/manufactur_boxplots.py
+Python_files/manufacturing_boxplots.py
 
 
