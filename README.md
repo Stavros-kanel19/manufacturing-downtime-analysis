@@ -29,7 +29,7 @@ The project focuses on the following questions:
 - Power Pivot
 - Pivot Tables
 - Excel Data Model / Star Schema
-- Basic DAX
+- DAX measures
 - Python
 - pandas
 - matplotlib
@@ -137,7 +137,7 @@ This project was built to demonstrate:
 - Power Query data preparation
 - Data modeling logic
 - Pivot based analysis
-- Basic DAX usage
+- DAX measures for KPI calculations, ratios, and downtime ranking
 - Manufacturing performance analysis
 - Downtime factor analysis
 - Exploratory visualization using Python
