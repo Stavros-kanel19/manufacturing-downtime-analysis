@@ -53,10 +53,10 @@ Supporting sheets with cleaned data, pivot tables, and helper calculations  are 
 ## Key Metrics
 
 - Total Batches: 38
-- Total Production Time: 3,858 minutes
-- Overall Efficiency: 64.02%
-- Overall Time Ratio: 1.56
-- Total Batch Overtime: 1,388 minutes
+- Total Production Time: 3.858 minutes
+- Overall Efficiency: 64,02%
+- Overall Time Ratio: 1,56
+- Total Batch Overtime: 1.388 minutes
 
 ---
 
