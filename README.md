@@ -2,15 +2,17 @@
 
 ## Project Overview
 
-This project analyses manufacturing line productivity and downtime using Microsoft Excel, Power Query, Power Pivot Tables, Python, and statistical thinking.
+This project is a manufacturing downtime and productivity analysis built mainly in Microsoft Excel, with additional support from Power Query, Power Pivot, and Python.
 
-The goal was to evaluate line efficiency, identify the main downtime drivers, compare operator and product performance, and use production time ratio as a normalized metric for fairer comparisons across different products.
+The main goal was to understand how efficiently the production line was running, which downtime factors caused the biggest losses, and how operator and product performance compared across different batches.
+
+A key part of the analysis was to avoid comparing operators only by total production time, because each operator worked on a different product mix. For that reason, I used Time Ratio to compare the actual production time against the minimum expected batch time for each product.
 
 ---
 
 ## Business Questions
 
-This analysis focuses on the following questions:
+The project focuses on the following questions:
 
 1. What is the overall production line efficiency?
 2. Which products and operators show lower efficiency?
@@ -24,8 +26,10 @@ This analysis focuses on the following questions:
 
 - Microsoft Excel
 - Power Query
-- Power Pivot Tables
-- Excel Data Model/Star Schema
+- Power Pivot
+- Pivot Tables
+- Excel Data Model / Star Schema
+- Basic DAX
 - Python
 - pandas
 - matplotlib
@@ -38,17 +42,17 @@ This analysis focuses on the following questions:
 The Excel workbook contains three main dashboard pages:
 
 1. **Operator Dashboard**  
-   Summarizes operator performance, batch count, efficiency, time ratio, shift details, and best/worst batches.
+   This page focuses on operator performance, batch count, efficiency, time ratio, shift details, and best/worst batches.
 
 2. **Products & Downtimes Dashboard**  
-   Shows product efficiency, production counts, main downtime factors, Pareto-style downtime analysis, and downtime by operator and factor.
+   This page shows product efficiency, production counts, main downtime factors, Pareto downtime analysis, and downtime by operator and factor.
 
 3. **Details Dashboard**  
-   Provides additional statistical views using time ratio and product/operator efficiency comparisons.
+   This page includes extra analysis using time ratio and product/operator efficiency comparisons.
 
-Supporting sheets with cleaned data, pivot tables, and helper calculations  are hidden in the workbook to keep the final file user-friendly.
-The dashboard also includes a navigation sidebar with clickable icons. Each icon is linked to a specific dashboard page, 
-allowing the user to move between the Operator Dashboard, Products & Downtimes Dashboard, and Details Dashboard directly from the workbook interface.
+Supporting sheets with cleaned data, pivot tables, and helper calculations are hidden in the workbook so that the final file stays clean and easy to use.
+
+The dashboard also includes a navigation sidebar with clickable icons. Each icon links to a specific dashboard page, so that the user can navigate through the Operator Dashboard, Products & Downtimes Dashboard, and Details Dashboard directly from workbook interface.
 
 ---
 
@@ -64,35 +68,38 @@ allowing the user to move between the Operator Dashboard, Products & Downtimes D
 
 ## Key Findings
 
-- Machine adjustment was the leading downtime factor.
+- Machine adjustment was the largest downtime factor.
 - Machine failure and inventory shortage were also major contributors.
-- Operator comparison should be interpreted carefully because product mix affects performance.
-- Time Ratio was used to normalize actual production time against product-specific minimum batch time.
-- Product/operator groups with only one batch were excluded from the boxplot comparison because boxplots require repeated observations.
+- Operator comparison needed careful interpretation because not all operators worked on the same product mix.
+- Time Ratio was selected in order to have fairer results among operators by comparing actual production time with the minimum expected batch time.
+- Product/operator combinations with only one batch were excluded from the boxplot comparison, because boxplots are more meaningful when there are repeated observations.
 
 ---
 
 ## Methodology
 
-The project included:
+The project included the following steps:
 
 1. Cleaning and transforming the manufacturing data in Power Query.
 2. Creating calculated fields for production time, batch overtime, efficiency, and time ratio.
-3. Building pivot tables and supporting helper sheets.
-4. Designing Excel dashboards for operational performance analysis.
-5. Using Python to generate boxplots for additional statistical exploration.
-6. Interpreting operator, product, and downtime factor patterns.
+3. Building pivot tables and helper sheets to support the dashboards.
+4. Designing the Excel dashboards and adding navigation between pages.
+5. Using Python to create boxplots for additional exploratory analysis.
+6. Interpreting the results while considering product mix, downtime factors, and small sample sizes in some product/operator combinations.
 
 ---
+
 ## Credits
 
 Dataset source: Maven Analytics guided project dataset.
 
-Some dashboard visual assets, such as icons and background images, were AI-generated for presentation purposes.
+Some dashboard visual assets, such as icons and background images, were AI-generated and used only for presentation purposes.
+
+---
 
 ## Python Analysis
 
-Python was used to generate the boxplot analysis included in the Details dashboard:
+Python was used to generate the boxplot analysis included in the Details Dashboard:
 
 - Time Ratio by Operator
 - Time Ratio by Product
@@ -120,6 +127,8 @@ Python_files/manufacturing_boxplots.py
 
 ![Details Dashboard](Dashboard/Details_Dashboard.png)
 
+---
+
 ## Project Focus
 
 This project was built to demonstrate:
@@ -127,11 +136,10 @@ This project was built to demonstrate:
 - Excel dashboard design
 - Power Query data preparation
 - Data modeling logic
-- Analysis with Power Pivots
+- Pivot based analysis
 - Basic DAX usage
 - Manufacturing performance analysis
 - Downtime factor analysis
-- Exploratory visualisation using Python
+- Exploratory visualization using Python
 - Statistical thinking for production and quality improvement
 - Interactive Excel navigation using linked dashboard icons
-
